@@ -1,5 +1,5 @@
-const Engineer = require("../lib/Manager");
-const engineer = new Engineer("owen", "8675309", "bigcheese@gmail.com", "317");
+const Manager = require("../lib/Manager");
+const manager = new Manager("owen", "8675309", "bigcheese@gmail.com", "317");
 
 test("test manager object", () => {
   expect(manager.name).toBe("owen");
@@ -14,10 +14,6 @@ test("test getName() method", () => {
 
 test("test getId() method", () => {
   expect(manager.getId()).toBe("8675309");
-});
-
-test("test getEmail() method", () => {
-  expect(manager.getEmail()).toBe("bigcheese@gmail.com");
 });
 
 test("test getEmail() method", () => {
